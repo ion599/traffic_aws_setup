@@ -20,5 +20,5 @@ def get_file(file_path, s3_file_name):
 
 
 file_path = '/home/lei/traffic/experiment_matrices.7z'
-#get_file(file_path, 'experiment_matrices.7z')
-os.system('7za x '+file_path+'-aoa'+config.DATA_DIR)
+get_file(file_path, 'experiment_matrices.7z')
+os.system('7za x '+file_path+' -aoa -o'+config.DATA_DIR)
